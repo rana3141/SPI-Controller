@@ -1,4 +1,4 @@
-# SPI-Controller
+# SPI (Serial Peripheral Interface) Controller RTL
 
 SPI Controller Block Diagram:
 
