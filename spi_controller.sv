@@ -22,11 +22,11 @@ input sclk_reff,miso;
 output reg [2:0] cs;	// 3 slaves
 
 //State machine encoding
-parameter S_IDLE = 5'b00001;
-parameter S_ADDR = 5'b00010;
-parameter S_IDLE_BW_ADDR_DATA = 5'b00100;
-parameter S_DATA = 5'b01000;
-parameter S_IDLE_WITH_TXS_PENDING = 5'b10000;
+parameter S_IDLE = 5'b00001;	//1
+parameter S_ADDR = 5'b00010;	//2
+parameter S_IDLE_BW_ADDR_DATA = 5'b00100;	//4
+parameter S_DATA = 5'b01000;	//8
+parameter S_IDLE_WITH_TXS_PENDING = 5'b10000;	//16
 
 //Internal SPI registers
 reg [WIDTH-1:0] addr_reg [NO_OF_TXS-1:0];
